@@ -7,6 +7,7 @@ import { TratosComponent } from './pages/tratos/tratos.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { ProfileComponent } from './pages/profile/profile.component';
+import { NgModule } from '@angular/core';
 
 @Component({
   selector: 'app-root',
