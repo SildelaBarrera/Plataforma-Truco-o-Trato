@@ -1,11 +1,10 @@
-export class Trato {
+export class Truco {
 
     constructor(
                 public title: string, 
                 public description: string,
                 public link: string,
-                public type: string, 
-                public photo: string, 
+                public type: string,  
                 ){
     }
 }

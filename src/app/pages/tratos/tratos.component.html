@@ -1,21 +1,23 @@
-
 <div class="contenedor">
-    <div class="descripcion">
 
+    <div class="presentacion">
+        <h1>TRUCOS</h1>
+        <h2>Aquí encontrarás tutoriales, juegos, trucos... para estar al día en el mundo de la programación. </h2>
     </div>
-
     <div class="tratos">
+        <ng-container *ngFor = "let trato of tratos">
+            <div class="card">
+                <h1 class="title">{{trato.title}}</h1>
+                <h4>{{trato.description}}</h4>
+                <button><a href={{trato.link}}>{{trato.type}}</a></button>
+                <img src={{trato.photo}}>
+            </div>
         
-        <div class="buscador">
-            <input #input1 type="text"
-            placeholder="Insert Id Book">
-            <!-- <button type="button" (click)="buscar(input1.value)">Find</button> -->
-        </div>
-        <div class="cards">
-    
-        </div>    
-    </div> 
-</div>   
+        </ng-container>
+    </div>
+</div>
+
+ 
       
   
       
