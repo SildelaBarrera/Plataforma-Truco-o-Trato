@@ -16,8 +16,13 @@ export class TrucosComponent {
   constructor(){
 
     this.trucos=[
-      new Truco('FLEXBOX FROGGY', 'Juego para aprender la propiedad CSS FlexBox', 'https://flexboxfroggy.com/#es', 'Juego'),
-      new Truco('GRID ATTACK', 'Juego de aventura para adentrarte en CSS Grid.', 'https://codingfantasy.com/games/css-grid-attack/play', 'Juego')
+      new Truco('1. TIC TAC', 'Crea una variable de tipo string con el texto: "Lorem ipsum dolor sit amet,\
+consectetur adipiscing elit. Phasellus mattis vehicula consequat. Proin dapibus\
+nuncquam, nec dictum erat feugiat vitae".', 'Muestra el número de caracteres de esa variable.\
+ Elimina los espacios en blanco de dicha variable y muéstralo por pantalla.', 'let phrase = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mattis vehicula consequat.\ Proin dapibus nuncquam, nec dictum erat feugiat vitae."\
+console.log(phrase.length);\
+console.log(phrase.replace(/ /g, ""));')
+      
     ]
   }
 

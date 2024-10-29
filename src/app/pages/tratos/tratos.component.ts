@@ -16,10 +16,9 @@ export class TratosComponent {
   constructor(){
 
     this.tratos=[
-      new Trato('FLEXBOX FROGGY', 'Juego para aprender la propiedad CSS FlexBox', 'https://flexboxfroggy.com/#es', 'Juego', '/assets/images/frog.jpg' ),
+      new Trato ('FLEXBOX FROGGY', 'Juego para aprender la propiedad CSS FlexBox', 'https://flexboxfroggy.com/#es', 'Juego', 'assets/images/frog.jpg'),
       new Trato ('GRID ATTACK', 'Juego de aventura para adentrarte en CSS Grid.', 'https://codingfantasy.com/games/css-grid-attack/play', 'Juego', '/assets/images/grid.jpg')
     ]
   }
 }
-
 

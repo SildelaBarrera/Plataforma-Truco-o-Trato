@@ -1,1 +1,29 @@
-<p>trucos works!</p>
+<div class="contenedor">
+
+    <div class="presentacion">
+        <h1>TRUCOS</h1>
+        <h2>Aquí encontrarás retos de diferente dificultad para ponerte a prueba. </h2>
+    </div>
+    <div class="trucos">
+        <ng-container *ngFor = "let truco of trucos">
+            <div class="card">
+                <h1 class="title">{{truco.title}}</h1>
+                <h4>{{truco.description}}</h4>
+                <h5> {{truco.text}}</h5>
+                
+                <button onclick=window.modal.showModal()>Abrir solución</button>
+
+                <dialog id="modal">
+                <p>{{truco.solution}}</p>
+                <button onclick=window.modal.close()>Cerrar</button>
+                </dialog>
+                
+            </div>
+        
+        </ng-container>
+    </div>
+</div>
+
+ 
+      
+  

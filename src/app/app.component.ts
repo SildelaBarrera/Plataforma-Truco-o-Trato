@@ -4,16 +4,14 @@ import { HomeComponent } from './pages/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { TrucosComponent } from './pages/trucos/trucos.component';
 import { TratosComponent } from './pages/tratos/tratos.component';
-import { LoginComponent } from './pages/login/login.component';
-import { RegisterComponent } from './pages/register/register.component';
-import { ProfileComponent } from './pages/profile/profile.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, HomeComponent, HeaderComponent, TrucosComponent, TratosComponent, LoginComponent, RegisterComponent, ProfileComponent],
+  imports: [CommonModule, RouterOutlet, HomeComponent, HeaderComponent, TrucosComponent, TratosComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
